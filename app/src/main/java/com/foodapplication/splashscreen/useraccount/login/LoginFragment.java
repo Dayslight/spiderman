@@ -12,7 +12,7 @@ import com.foodapplication.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LoginFragment extends Fragment implements LoginController{
+public class LoginFragment extends Fragment implements LoginController.View{
 
 
     public LoginFragment() {

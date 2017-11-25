@@ -5,4 +5,12 @@ package com.foodapplication.home;
  */
 
 public interface HomeController {
+
+    interface View{
+
+    }
+
+    interface Presenter{
+
+    }
 }

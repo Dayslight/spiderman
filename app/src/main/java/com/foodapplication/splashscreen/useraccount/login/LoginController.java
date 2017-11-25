@@ -5,4 +5,13 @@ package com.foodapplication.splashscreen.useraccount.login;
  */
 
 public interface LoginController {
+
+    interface View{
+
+    }
+
+
+    interface Presenter{
+
+    }
 }
