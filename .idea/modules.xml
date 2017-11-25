@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FoodApplication.iml" filepath="$PROJECT_DIR$/FoodApplication.iml" />
+      <module fileurl="file://C:\Users\devkk\Office Project\spiderman\FoodApplication.iml" filepath="C:\Users\devkk\Office Project\spiderman\FoodApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spiderman.iml" filepath="$PROJECT_DIR$/spiderman.iml" />
     </modules>
   </component>
 </project>
