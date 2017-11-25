@@ -1,4 +1,4 @@
-package com.foodapplication.useraccount.home;
+package com.foodapplication.splashscreen.useraccount.home;
 
 /**
  * Created by bijaybogati on 11/25/17.

@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".useraccount.login.LoginActivity">
+        <activity android:name=".splashscreen.useraccount.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".useraccount.home.HomeActivity"></activity>
+        <activity android:name=".splashscreen.useraccount.home.HomeActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.foodapplication.useraccount.signup;
+package com.foodapplication.splashscreen.useraccount.login;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.foodapplication.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SignupFragment extends Fragment {
+public class LoginFragment extends Fragment implements LoginController{
 
 
-    public SignupFragment() {
+    public LoginFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class SignupFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_signup, container, false);
+        return inflater.inflate(R.layout.fragment_login, container, false);
     }
 
 }

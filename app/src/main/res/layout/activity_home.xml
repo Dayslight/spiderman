@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.foodapplication.useraccount.home.HomeActivity">
+    tools:context=".splashscreen.useraccount.home.HomeActivity">
 
 </android.support.constraint.ConstraintLayout>
