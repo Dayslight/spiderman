@@ -1,7 +1,9 @@
-package com.foodapplication;
+package com.foodapplication.useraccount.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.foodapplication.R;
 
 public class LoginActivity extends AppCompatActivity {
 
