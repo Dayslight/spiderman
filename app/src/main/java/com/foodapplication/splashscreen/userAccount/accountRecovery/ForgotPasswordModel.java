@@ -1,4 +1,4 @@
-package com.foodapplication.splashscreen.userAccount.accountRecovery.accountRecovery;
+package com.foodapplication.splashScreen.userAccount.accountRecovery;
 
 /**
  * Created by bijaybogati on 11/25/17.

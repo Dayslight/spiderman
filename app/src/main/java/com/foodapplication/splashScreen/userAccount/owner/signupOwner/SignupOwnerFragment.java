@@ -1,4 +1,4 @@
-package com.foodapplication.splashScreen.userAccount.accountVerify;
+package com.foodapplication.splashScreen.userAccount.owner.signupOwner;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.foodapplication.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VerifyFragment extends Fragment implements VerifyController.View{
+public class SignupOwnerFragment extends Fragment implements SignupOwnerController.View{
 
 
-    public VerifyFragment() {
+    public SignupOwnerFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class VerifyFragment extends Fragment implements VerifyController.View{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_verify, container, false);
+        return inflater.inflate(R.layout.fragment_signup_owner, container, false);
     }
 
 }

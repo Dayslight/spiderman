@@ -18,7 +18,7 @@
         </activity>
 
 
-        <activity android:name=".mainScreen.MainScreenActivity" />
+        <activity android:name=".mainScreen.client.MainScreenActivity" />
     </application>
 
 </manifest>

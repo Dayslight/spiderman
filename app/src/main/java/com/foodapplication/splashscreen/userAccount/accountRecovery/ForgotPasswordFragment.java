@@ -1,4 +1,4 @@
-package com.foodapplication.splashscreen.userAccount.accountRecovery.accountRecovery;
+package com.foodapplication.splashScreen.userAccount.accountRecovery;
 
 
 import android.os.Bundle;

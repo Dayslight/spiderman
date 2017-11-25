@@ -1,16 +1,16 @@
-package com.foodapplication.splashScreen.userAccount.accountVerify;
+package com.foodapplication.mainScreen.client.publicFeed;
 
 /**
  * Created by bijaybogati on 11/25/17.
  */
 
-public interface VerifyController {
-
+public interface PublicFeedController {
 
 
     interface View{
 
     }
+
 
     interface Presenter{
 
