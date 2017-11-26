@@ -13,4 +13,18 @@
     <!--</string-array>-->
 
 
+
+    <string name="loginLblDetail">Enter your login credentials to get access:</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="dontHave">Dont\'t have an account?</string>
+    <string name="signup">Sign up</string>
+    <string name="signupLblDetail">Hey there! You can start by creating a new account</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="repeatPassword">Repeat Password</string>
+    <string name="doYouHave">Do you have an account?</string>
+
+
 </resources>
