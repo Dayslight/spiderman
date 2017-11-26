@@ -5,4 +5,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="time">Time</string>
     <string name="food">Food</string>
+
+    <!--<string-array name="navigation_item">-->
+        <!--<string name="profile">Profile</string>-->
+        <!--<string name="order">Order</string>-->
+        <!--<string name="feed">Feed</string>-->
+    <!--</string-array>-->
+
+
 </resources>
