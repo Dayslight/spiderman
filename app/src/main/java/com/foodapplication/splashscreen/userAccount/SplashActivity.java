@@ -5,11 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.foodapplication.R;
 
-public class SplashActivity extends AppCompatActivity implements SplashController.View{
+public class SplashActivity extends AppCompatActivity implements SplashController.View {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_home_feeds);
+        setContentView(R.layout.activity_splash);
     }
 }
