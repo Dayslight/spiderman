@@ -1,13 +1,146 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nestedScrollView"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/buttonColor"
+    >
+
+<android.support.v7.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  >
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/mainLayoutLeftPadding"
+    android:paddingRight="@dimen/mainLayoutRightPadding">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="@dimen/imageAvatarWidth"
+        android:layout_height="@dimen/imageAvatarWidth"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/imageAvatarTopMargin"
+        app:srcCompat="@drawable/ic_signup_avatar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtLblDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/signupTextLblDetailPadding"
+        android:text="@string/signupLblDetail"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/txtLblDetailTxtSize" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutUsername"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:theme="@style/SignupHintStyle"
+        >
 
-</FrameLayout>
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/editTextSize"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editTxtTopMargin"
+        android:theme="@style/SignupHintStyle">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/emailAddress"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/editTextSize" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editTxtTopMargin"
+        android:theme="@style/SignupHintStyle">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/editTextSize"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editTxtTopMargin"
+        android:theme="@style/SignupHintStyle">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/repeatPassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/editTextSize"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LoginButtonHeight"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/buttonMargin"
+        android:background="@drawable/signup_button_background"
+        android:text="@string/signup"
+        android:textColor="@color/buttonColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDontHave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/doYouHave"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/editTextSize" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:clickable="true"
+            android:paddingLeft="@dimen/txtSpace"
+            android:text="@string/login"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/editTextSize" />
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>
