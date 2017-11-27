@@ -18,7 +18,7 @@ public class MainScreenActivity extends AppCompatActivity implements MainScreenC
     TabLayout tabs;
     @BindView(R.id.viewpager)
     ViewPager viewpager;
-    MainScreenController.Presenter presenter;
+    MainScreenController.Presenter presenter ;
 
     @Override
 
