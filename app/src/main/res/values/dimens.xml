@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainLayoutLeftPadding">50dp</dimen>
+    <dimen name="mainLayoutRightPadding">50dp</dimen>
+    <dimen name="imageFingerprintWidth">80dp</dimen>
+    <dimen name="imageFingerprintHeight">100dp</dimen>
+    <dimen name="LoginButtonHeight">45dp</dimen>
+    <dimen name="imageAvatarWidth">50dp</dimen>
+    <dimen name="imageFingerTopMargin">70dp</dimen>
+    <dimen name="loginTextLblDetailPadding">30dp</dimen>
+    <dimen name="imageAvatarTopMargin">60dp</dimen>
+    <dimen name="signupTextLblDetailPadding">20dp</dimen>
+    <dimen name="txtLblDetailTxtSize">18sp</dimen>
+    <dimen name="editTextSize">14sp</dimen>
+    <dimen name="editTxtTopMargin">15dp</dimen>
+    <dimen name="forgotPasswordTxtSize">16sp</dimen>
+    <dimen name="forgotPasswordTopMargin">20dp</dimen>
+    <dimen name="buttonMargin">40dp</dimen>
+    <dimen name="txtSpace">5dp</dimen>
+</resources>

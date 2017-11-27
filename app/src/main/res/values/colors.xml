@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+
+
+
+
+    <color name="hintColor">#dddddd</color>
+    <color name="lblDetailColor">#252544</color>
+    <color name="darkTextColor">#000000</color>
+    <color name="lightTextColor">#9f9f9f</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="buttonColor">#3f87f5</color>
 </resources>

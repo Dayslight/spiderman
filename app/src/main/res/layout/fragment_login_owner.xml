@@ -1,59 +1,60 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="0dp"
-    android:paddingLeft="50dp"
-    android:paddingRight="50dp"
-    android:paddingTop="0dp">
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    >
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mainLayoutLeftPadding"
+        android:paddingRight="@dimen/mainLayoutRightPadding">
 
         <android.support.v7.widget.AppCompatImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/imageFingerprintWidth"
+            android:layout_height="@dimen/imageFingerprintHeight"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/imageFingerTopMargin"
             app:srcCompat="@drawable/ic_fingerprint" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/txtinfo"
-            android:layout_width="fill_parent"
+            android:id="@+id/txtLblDetail"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
             android:gravity="center"
-            android:text="Enter your login credentials to get access:"
-            android:textColor="#000000"
-            android:textSize="24dp" />
+            android:padding="@dimen/loginTextLblDetailPadding"
+            android:text="@string/loginLblDetail"
+            android:textColor="@color/lblDetailColor"
+            android:textSize="@dimen/txtLblDetailTxtSize" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputLayoutUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp">
+            android:theme="@style/LoginHintStyle">
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/edtUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableRight="@drawable/ic_avatar"
-                android:hint="Username"
+                android:drawableRight="@drawable/ic_login_avatar"
+                android:hint="@string/username"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textColor="#000000" />
+                android:textColor="@color/darkTextColor"
+                android:textSize="@dimen/editTextSize" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputLayoutPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp">
+            android:layout_marginTop="@dimen/editTxtTopMargin"
+            android:theme="@style/LoginHintStyle">
 
 
             <android.support.design.widget.TextInputEditText
@@ -61,31 +62,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/ic_key"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:textColor="#000000" />
+                android:textColor="@color/darkTextColor"
+                android:textSize="@dimen/editTextSize" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/txtForgot"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/forgotPasswordTopMargin"
             android:clickable="true"
             android:gravity="center"
-            android:text="Forgot password?"
-            android:textSize="15dp" />
+            android:text="@string/forgotPassword"
+            android:textColor="@color/lightTextColor"
+            android:textSize="@dimen/forgotPasswordTxtSize" />
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_height="@dimen/LoginButtonHeight"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/buttonMargin"
             android:background="@drawable/login_button_background"
-            android:text="LOGIN"
-            android:textColor="#ffffff" />
+            android:text="@string/login"
+            android:textColor="@color/whiteColor" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,21 +100,19 @@
                 android:id="@+id/txtDontHave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-
-                android:text="Dont't have an account?"
-                android:textSize="16dp" />
+                android:text="@string/dontHave"
+                android:textColor="@color/lblDetailColor"
+                android:textSize="@dimen/editTextSize" />
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/txtSignup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
                 android:clickable="true"
-                android:paddingLeft="5dp"
-                android:text="Sign up"
-                android:textColor="#3f87f5"
-                android:textSize="16dp" />
+                android:paddingLeft="@dimen/txtSpace"
+                android:text="@string/signup"
+                android:textColor="@color/buttonColor"
+                android:textSize="@dimen/editTextSize" />
         </LinearLayout>
 
     </android.support.v7.widget.LinearLayoutCompat>
