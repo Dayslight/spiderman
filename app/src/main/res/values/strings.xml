@@ -7,10 +7,14 @@
     <string name="food">Food</string>
 
     <!--<string-array name="navigation_item">-->
-        <!--<string name="profile">Profile</string>-->
-        <!--<string name="order">Order</string>-->
-        <!--<string name="feed">Feed</string>-->
+    <!--<string name="profile">Profile</string>-->
+    <!--<string name="order">Order</string>-->
+    <!--<string name="feed">Feed</string>-->
     <!--</string-array>-->
-
+    <string-array name="navigation_items">
+        <item>Profile</item>
+        <item>Time</item>
+        <item>Food</item>
+    </string-array>
 
 </resources>
