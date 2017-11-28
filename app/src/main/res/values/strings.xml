@@ -18,6 +18,8 @@
     </string-array>
 
 
+
+
     <string name="loginLblDetail">Enter your login credentials to get access:</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
@@ -31,7 +33,9 @@
     <string name="doYouHave">Do you have an account?</string>
 
     <string name="ShortDescription">RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</string>
-
+    <string name="profile">Profile</string>
+    <string name="feed">Feed</string>
+    <string name="order">Order</string>
 
 
 </resources>
