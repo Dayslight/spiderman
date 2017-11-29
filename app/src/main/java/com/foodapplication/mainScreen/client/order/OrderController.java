@@ -1,10 +1,10 @@
-package com.foodapplication.mainScreen.client.home;
+package com.foodapplication.mainScreen.client.order;
 
 /**
  * Created by bijaybogati on 11/25/17.
  */
 
-public interface HomeController {
+public interface OrderController {
 
 
     interface View{

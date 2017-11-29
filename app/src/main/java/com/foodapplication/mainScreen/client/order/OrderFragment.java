@@ -1,4 +1,4 @@
-package com.foodapplication.mainScreen.client.home;
+package com.foodapplication.mainScreen.client.order;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.foodapplication.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment implements HomeController.View{
+public class OrderFragment extends Fragment implements OrderController.View{
 
 
-    public HomeFragment() {
+    public OrderFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class HomeFragment extends Fragment implements HomeController.View{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_order, container, false);
     }
 
 }
