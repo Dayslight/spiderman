@@ -12,7 +12,7 @@ import com.foodapplication.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProfileFragment extends Fragment implements ProfileController.View{
+public class ProfileFragment extends Fragment implements ProfileController.View {
 
 
     public ProfileFragment() {

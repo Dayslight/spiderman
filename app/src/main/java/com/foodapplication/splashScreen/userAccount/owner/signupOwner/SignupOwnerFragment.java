@@ -93,19 +93,6 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void selectImage() {
         final CharSequence[] items = {"Take Photo", "Choose from Library",
                 "Cancel"};
@@ -133,7 +120,6 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
         });
         builder.show();
     }
-
 
     private void cameraIntent() {
         System.out.println("*******R*******open camera");

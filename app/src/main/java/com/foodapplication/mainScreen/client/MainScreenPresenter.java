@@ -3,7 +3,7 @@ package com.foodapplication.mainScreen.client;
 import android.support.v4.app.FragmentManager;
 
 import com.foodapplication.R;
-import com.foodapplication.mainScreen.client.home.HomeFragment;
+import com.foodapplication.mainScreen.client.order.OrderFragment;
 import com.foodapplication.mainScreen.client.profile.ProfileFragment;
 import com.foodapplication.mainScreen.client.publicFeed.PublicFeedFragment;
 
@@ -44,9 +44,7 @@ public class MainScreenPresenter implements MainScreenController.Presenter {
 
     private void setIcons() {
         int[] icons = {
-                R.drawable.ic_profile,
-                R.drawable.ic_feed,
-                R.drawable.ic_order_food
+                R.drawable.ic_rss_house, R.drawable.ic_order_food,R.drawable.ic_profile
         };
 
         view.setNavigationIcons(icons);
@@ -55,9 +53,9 @@ public class MainScreenPresenter implements MainScreenController.Presenter {
     private void setAdapter() {
 
         viewPagerAdapter = new ViewPagerAdapter(fragmentManager);
-        viewPagerAdapter.addFrag(new HomeFragment(), "Profile");
-        viewPagerAdapter.addFrag(new ProfileFragment(), "Feed");
-        viewPagerAdapter.addFrag(new PublicFeedFragment(), "Order");
+        viewPagerAdapter.addFrag(new PublicFeedFragment(), "Feed");
+        viewPagerAdapter.addFrag(new OrderFragment(), "Order");
+        viewPagerAdapter.addFrag(new ProfileFragment(), "Profile");
         view.setViewpagerAdapter(viewPagerAdapter);
     }
 

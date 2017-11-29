@@ -2,13 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainScreen.client.home.HomeFragment">
+    tools:context=".mainScreen.client.order.OrderFragment">
 
 
     <TextView
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:text="Hello home fragment" />
 
 </android.support.design.widget.CoordinatorLayout>
