@@ -9,10 +9,18 @@ public interface SignupClientController {
 
     interface View{
 
+        void openNextScreen();
+
+        void setPresenter(Presenter presenter);
+
     }
 
 
     interface Presenter{
+
+
+        void signUp(String name);
+
 
     }
 }

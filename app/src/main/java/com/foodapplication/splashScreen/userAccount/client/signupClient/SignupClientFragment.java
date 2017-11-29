@@ -14,6 +14,9 @@ import com.foodapplication.R;
  */
 public class SignupClientFragment extends Fragment implements SignupClientController.View{
 
+    SignupClientController.Presenter signupClientPresenter;
+
+
 
     public SignupClientFragment() {
         // Required empty public constructor
@@ -24,7 +27,26 @@ public class SignupClientFragment extends Fragment implements SignupClientContro
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+        signupClientPresenter = new SignupClientPresenter(this);
+
+
+
+
         return inflater.inflate(R.layout.fragment_signup_owner, container, false);
     }
+
+
+    @Override
+    public void openNextScreen() {
+
+    }
+
+    @Override
+    public void setPresenter(SignupClientController.Presenter presenter) {
+        this.signupClientPresenter = presenter;
+    }
+
 
 }

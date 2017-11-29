@@ -20,7 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.foodapplication.R;
-import com.foodapplication.Utility;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
