@@ -12,6 +12,7 @@ import android.provider.MediaStore;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.AppCompatTextView;
@@ -20,6 +21,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.foodapplication.R;
+import com.foodapplication.helper.FragmentChange;
+import com.foodapplication.splashScreen.userAccount.owner.signupOwner.SignupSpecialities.SignupSpecialitiesOwnerFragment;
+import com.foodapplication.utils.AppPermissionUtil;
+import com.foodapplication.utils.FragmentUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -36,12 +41,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SignupOwnerFragment extends Fragment implements SignupOwnerController.View {
-
-    private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
-    private String userChoosenTask;
-
-
+public class SignupOwnerFragment extends Fragment implements SignupOwnerController.View, AppPermissionUtil.MyPermission  {
 
 
     @BindView(R.id.resturantImageView)
@@ -64,7 +64,15 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
     AppCompatTextView txtSignup;
     @BindView(R.id.nestedScrollView)
     NestedScrollView nestedScrollView;
+    private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
+    private String userChoosenTask;
+
+    FragmentManager fragmentManager;
+    Fragment fragment;
+
     Unbinder unbinder;
+    FragmentChange fragmentChange;
+
 
     public SignupOwnerFragment() {
         // Required empty public constructor
@@ -77,6 +85,7 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_signup_owner, container, false);
         unbinder = ButterKnife.bind(this, view);
+
         return view;
     }
 
@@ -86,14 +95,10 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
         unbinder.unbind();
     }
 
-    @OnClick(R.id.resturantImageView)
-    public void onViewClicked() {
-        selectImage();
-
-
-    }
 
     private void selectImage() {
+
+
         final CharSequence[] items = {"Take Photo", "Choose from Library",
                 "Cancel"};
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -101,21 +106,24 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
-                boolean result = Utility.checkPermission(getActivity());
+
+
                 if (items[item].equals("Take Photo")) {
                     userChoosenTask = "Take Photo";
-                    if (result)
-                        System.out.println("*******R*******take photo selected");
+
+                    System.out.println("*******R*******take photo selected");
                     cameraIntent();
                 } else if (items[item].equals("Choose from Library")) {
                     userChoosenTask = "Choose from Library";
-                    if (result)
-                        System.out.println("*******R*******Gallery selected");
+
+                    System.out.println("*******R*******Gallery selected");
                     galleryIntent();
                 } else if (items[item].equals("Cancel")) {
                     System.out.println("*******R*******cancel selected");
                     dialog.dismiss();
                 }
+
+
             }
         });
         builder.show();
@@ -189,8 +197,28 @@ public class SignupOwnerFragment extends Fragment implements SignupOwnerControll
     }
 
 
+    @Override
+    public void onPermission() {
+        selectImage();
 
 
+    }
+
+
+    @OnClick({R.id.resturantImageView, R.id.imgNext})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.resturantImageView:
+                AppPermissionUtil.askPermission(getActivity(), "android.permission.CAMERA", "You Should Give Camera Permission!!", SignupOwnerFragment.this);
+
+                break;
+            case R.id.imgNext:
+                fragment = new SignupSpecialitiesOwnerFragment();
+                fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction().addToBackStack("home").replace(R.id.mainContainer, fragment).commit();
+                break;
+        }
+    }
 
 
 }

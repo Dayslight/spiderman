@@ -20,8 +20,10 @@ public class AppPermissionUtil {
             if (hasPermission != PackageManager.PERMISSION_GRANTED) {
                 if (!activity.shouldShowRequestPermissionRationale(permission)) {
                     UserInterfaceUtil.showPermissionInfo(activity, "Grant permission", messageBody, activity, permission);
+
                     return;
                 }
+
                 activity.requestPermissions(new String[]{permission},
                         Constants.REQUEST_CODE_ASK_PERMISSIONS);
                 return;

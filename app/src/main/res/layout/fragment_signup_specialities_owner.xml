@@ -1,0 +1,150 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingLeft="@dimen/mainLayoutLeftPadding"
+            android:paddingRight="@dimen/mainLayoutRightPadding">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtCuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:text="Cuisine available"
+                android:textColor="@color/hintColor"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutCuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:theme="@style/SignupHintStyle">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTxtCuisine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cuisine"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/editTextSize" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutSpeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/editTxtTopMargin"
+                android:theme="@style/SignupHintStyle">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTxtSpeciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Speciality"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/editTextSize" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSpecialities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--<GridLayout-->
+            <!--android:id="@+id/options_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:numColumns="auto_fit"/>-->
+
+            <TextView
+                android:id="@+id/txtOpenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Select the opening time"
+                android:textSize="25sp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:id="@+id/txtClosingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Select the closing time"
+                android:textSize="25sp"
+                android:clickable="true"
+                />
+
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LoginButtonHeight"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/buttonMargin"
+                android:background="@drawable/signup_button_background"
+                android:text="@string/signup"
+                android:textColor="@color/buttonColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtDontHave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doYouHave"
+                    android:textColor="@color/hintColor"
+                    android:textSize="@dimen/editTextSize" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/txtSpace"
+                    android:text="@string/login"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/editTextSize" />
+            </LinearLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</android.support.v4.widget.NestedScrollView>
