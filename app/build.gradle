@@ -60,6 +60,4 @@ dependencies {
     compile 'com.afollestad.material-dialogs:core:0.9.6.0'
 
 
-
-
 }

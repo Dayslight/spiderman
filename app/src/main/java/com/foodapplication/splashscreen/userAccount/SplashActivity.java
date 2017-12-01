@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
 
 import com.foodapplication.R;
-import com.foodapplication.splashScreen.userAccount.owner.signupOwner.SignupOwnerFragment;
+import com.foodapplication.splashScreen.userAccount.account.owner.signupOwner.SignupOwnerFragment;
 
 import butterknife.BindView;
 
@@ -26,9 +26,6 @@ public class SplashActivity extends AppCompatActivity implements SplashControlle
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        fragmentManager = getSupportFragmentManager();
-        fragment = new SignupOwnerFragment();
-        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).commit();
 
     }
 }

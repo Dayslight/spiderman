@@ -18,8 +18,6 @@
     </string-array>
 
 
-
-
     <string name="loginLblDetail">Enter your login credentials to get access:</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
